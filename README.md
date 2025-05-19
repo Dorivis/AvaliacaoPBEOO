@@ -1,6 +1,6 @@
 # Avaliação Orientação a Objetos!
 
-Gostaria de informá-los que, no decorrer do dia de hoje, será conduzida uma atividade avaliativa que tem como escopo central o universo conceitual e prático da disciplina de Programação Orientada a Objetos (POO), com ênfase nos aspectos mais relevantes que foram, ao longo do período letivo, discutidos, explorados e analisados em diferentes contextos pedagógicos e aplicacionais.
+Gostaria de informá-los que, no decorrer do dia de hoje, será realizada uma avaliação que tem como escopo central o universo conceitual e prático da disciplina de Programação Orientada a Objetos (POO), com ênfase nos aspectos mais relevantes que foram, ao longo do período letivo, discutidos, explorados e analisados em diferentes contextos pedagógicos e aplicacionais.
 
 Essa avaliação, concebida com um olhar voltado tanto para a dimensão teórica quanto para a aplicação prática, objetiva proporcionar um espaço de reflexão crítica acerca dos fundamentos e pilares que sustentam a lógica da orientação a objetos, permitindo, assim, uma análise mais aprofundada do grau de internalização e domínio.
 
