@@ -130,15 +130,17 @@ Seguindo o diagrama a seguir, você deve montar todos os models necessários par
 **Dica: Reparem que tem metodos com o mesmo endpoint, por exemplo GET /itenspedido/ e POST /itenspedido/ , nesses casos usar o @api_view(['GET', 'POST'])**
 
 ### Documentação
-<span style="color: red;"> Deve ser feita a documentação de sua API. </span>
+![texto](https://img.shields.io/badge/-Deve%20ser%20feita%20a%20documentação%20de%20sua%20API.-FF0000)
+<span style="color: red;">  </span>
 
 ### Lembrete
  - O código deve seguir boas praticas, ou seja,
     - nome de classes, variaveis, objetos. Seguindo o padrão devido.
-    - <pre style="background-color: red;">COMENTÁRIOS</pre>
+    - ![texto](https://img.shields.io/badge/-COMENTÁRIOS-FF0000)
     - Seguir o mesmo padrão durante seu codigo, por exemplo: Se estiver usando camelCase, manter o camelCase e não mudar para snake_case, o mesmo vale para o contrario
+
   
 
-<span style="color:#e63946; font-weight:bold;">Título em vermelho</span>
+
 
 
