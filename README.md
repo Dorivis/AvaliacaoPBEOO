@@ -10,74 +10,131 @@ Dessa forma, espera-se que vocês mobilizem seus conhecimentos prévios e os art
 
 Mas, respire fundo… porque **hoje não terá avaliação!**. Em vez da prova,vocês irão criar um projeto em django
 
-## 📌 1. O que é Django Rest Framework (DRF)?
-
-Pesquise e responda:
-
-- O que é o DRF?  
-- Para que ele serve?  
-- Quais são suas vantagens?  
-- Que problemas ele resolve em relação ao Django tradicional?
-
-## 📌 2. Instalação e Configuração Inicial
-
-Pesquise:
-
-- Como instalar o DRF em um projeto Django existente.  
-- Como habilitar o DRF no arquivo `settings.py` usando `INSTALLED_APPS`.  
-- O que significa ter `'rest_framework'` dentro de `INSTALLED_APPS`.
 
 
+## 📌 CONTEXTO
+
+Você e sua equipe foram contratados por uma rede de restaurantes chamada **Sabor Super Logico** para modernizar a gestão do seu negócio. Atualmente, os restaurantes ainda utilizam processos manuais e planilhas para controlar clientes, pedidos, produtos, funcionários, mesas, fornecedores e estoque, o que gera erros, retrabalho e demora no atendimento.
+
+O objetivo do seu projeto é desenvolver uma API RESTful usando **Django** + **Django REST Framework** para digitalizar e automatizar todas essas operações. Com a API, será possível:
+
+ - Cadastrar, listar, atualizar e deletar clientes, funcionários, produtos, mesas, fornecedores e pedidos;
+ - Registrar e gerenciar pagamentos de pedidos;
+ - Consultar o histórico de pedidos de um cliente;
+ - Verificar produtos disponíveis em estoque;
+ - Facilitar a integração com futuras aplicações front-end, como apps de pedidos online ou sistemas de gestão interna.
+ - 
+Com esta API, o restaurante **Sabor Super Logico** poderá reduzir erros, agilizar o atendimento e melhorar a experiência de seus clientes, enquanto mantém um controle eficiente sobre suas operações diárias.
 
 
-## 📌 3. O que é o decorator `@api_view`?
+### Projeto
+Criar um projeto django chamado **sabor_super_logico**
 
-Pesquise:
+### Aplicação
+Criar uma aplicação chamada **restaurante_api**
 
-- Para que serve o decorator `@api_view`.  
-- Quais métodos HTTP ele aceita.  
-- Como funciona o controle de métodos, por exemplo:
+### Modelos
+Seguindo o diagrama a seguir, você deve montar todos os models necessários para o desenvolvimento da aplicação
 
-```python
-@api_view(['GET', 'POST'])
-```
- - Por que ele é considerado parte da abordagem funcional do DRF.
+![DER](https://github.com/Dorivis/AvaliacaoPBEOO/blob/main/databaseProjeto.png)
 
- ## 📌 4. Criando uma API Simples usando @api_view
- Você deve pesquisar como criar endpoints que realizem:
 
-### a) GET
+### Endpoints
+### Para clientes:
+ **Descrição**: Cadastro de clientes do restaurante.
+ - GET /clientes/ → Listar todos os clientes
+ - GET /clientes/<id>/ → Detalhes de um cliente específico
+ - POST /clientes/ → Criar um cliente
+ - PUT /clientes/<id>/ → Atualizar informações de um cliente
+ - DELETE /clientes/<id>/ → Remover um cliente
 
- - Criar uma view que retorne uma lista simples (ex.: produtos, tarefas, alunos).
- - Pesquisar como retornar JSON utilizando Response.
+### Para funcionários
+ **Descrição**: Cadastro de funcionários do restaurante (garçons, cozinheiros, caixas).
+ - GET /funcionarios/ → Listar funcionários
+ - GET /funcionarios/<id>/ → Detalhes
+ - POST /funcionarios/ → Criar funcionário
+ - PUT /funcionarios/<id>/ → Atualizar funcionário
+ - DELETE /funcionarios/<id>/ → Remover funcionário
 
-### b) POST
+### Para Categorias de Produtos
+ **Descrição**: Classificação dos produtos (bebidas, lanches, sobremesas).
+ - GET /categorias/
+ - GET /categorias/<id>/
+ - POST /categorias/
+ - PUT /categorias/<id>/
+ - DELETE /categorias/<id>/
 
- - Criar uma view que receba dados enviados pelo cliente e os retorne ou salve temporariamente em uma lista em memória.
- - Pesquisar como acessar dados enviados no corpo da requisição usando request.data.
+### Para Produtos
+ **Descrição**: Produtos vendidos no restaurante.
+ - GET /produtos/ → Listar produtos
+ - GET /produtos/<id>/ → Detalhes do produto
+ - POST /produtos/ → Criar produto
+ - PUT /produtos/<id>/ → Atualizar produto
+ - DELETE /produtos/<id>/ → Remover produto
 
-### c) DELETE
+### Para Ingredientes
+ **Descrição**: Ingredientes que compõem os produtos (controle de estoque).
+ - GET /ingredientes/
+ - GET /ingredientes/<id>/
+ - POST /ingredientes/
+ - PUT /ingredientes/<id>/
+ - DELETE /ingredientes/<id>/
 
- - Criar uma view que delete um item (em memória ou no banco).
- - Pesquisar como receber parâmetros pela URL:
+### Para Mesas
+ **Descrição**: Gerenciamento das mesas do restaurante.
+ - GET /ingredientes/
+ - GET /ingredientes/<id>/
+ - POST /ingredientes/
+ - PUT /ingredientes/<id>/
+ - DELETE /ingredientes/<id>/
 
-``` bash
-api/item/<int:id>/
-```
+### Para Pedidos
+ **Descrição**: Registro de pedidos realizados pelos clientes.
+ - GET /pedidos/ → Listar pedidos
+ - GET /pedidos/<id>/ → Detalhes do pedido
+ - POST /pedidos/ → Criar pedido
+ - PUT /pedidos/<id>/ → Atualizar pedido (status, itens)
+ - DELETE /pedidos/<id>/ → Cancelar pedido
 
- ## 📌 5. Rotas (URLs)
- Pesquise:
-  - Como registrar suas views no arquivo urls.py.
-  - Diferenças entre rotas de Django tradicional e rotas usando views funcionais com DRF.
+### Para Itens de Pedido
+ **Descrição**: Produtos incluídos em cada pedido.
+ - GET /itenspedido/ → Listar itens
+ - POST /itenspedido/ → Adicionar item a um pedido
+ - PUT /itenspedido/<id>/ → Atualizar quantidade
+ - DELETE /itenspedido/<id>/ → Remover item do pedido
 
-## Entrega
+### Para Pagamentos
+ **Descrição**: Registro de pagamentos de pedidos.
+ - GET /pagamentos/
+ - GET /pagamentos/<id>/
+ - POST /pagamentos/ → Registrar pagamento
+ - PUT /pagamentos/<id>/ → Atualizar informações
+ - DELETE /pagamentos/<id>/
 
-Seu trabalho deve conter:
- 1. Explicações teóricas de todos os tópicos acima.
- 2. Trechos de código pesquisados e comentados.
- 3. Um passo a passo mostrando como criar uma mini API contendo:
-     - 1 rota GET
-     - 1 rota POST
-     - 1 rota DELETE
+### Para Fornecedores
+ **Descrição**: Fornecedores de ingredientes e produtos.
+ - GET /pagamentos/
+ - GET /pagamentos/<id>/
+ - POST /pagamentos/ → Registrar pagamento
+ - PUT /pagamentos/<id>/ → Atualizar informações
+ - DELETE /pagamentos/<id>/
 
- 4. Prints mostrando seus testes no Insomnia ou Postman.
+### Para Compras
+ **Descrição**: Registro de compras realizadas com fornecedores, atualizando estoque.
+ - GET /compras/ → Listar compras
+ - GET /compras/<id>/ → Detalhes da compra
+ - POST /compras/ → Registrar compra
+ - PUT /compras/<id>/ → Atualizar compra
+ - DELETE /compras/<id>/ → Remover compra
+
+**Dica: Reparem que tem metodos com o mesmo endpoint, por exemplo GET /itenspedido/ e POST /itenspedido/ , nesses casos usar o @api_view(['GET', 'POST'])**
+
+### Documentação
+<span style="color: red;"> Deve ser feita a documentação de sua API. </span>
+
+### Lembrete
+ - O código deve seguir boas praticas, ou seja,
+    - nome de classes, variaveis, objetos. Seguindo o padrão devido.
+    - <pre style="background-color: red;">COMENTÁRIOS</pre>
+    - Seguir o mesmo padrão durante seu codigo, por exemplo: Se estiver usando camelCase, manter o camelCase e não mudar para snake_case, o mesmo vale para o contrario
+    - 
