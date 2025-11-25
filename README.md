@@ -137,4 +137,8 @@ Seguindo o diagrama a seguir, você deve montar todos os models necessários par
     - nome de classes, variaveis, objetos. Seguindo o padrão devido.
     - <pre style="background-color: red;">COMENTÁRIOS</pre>
     - Seguir o mesmo padrão durante seu codigo, por exemplo: Se estiver usando camelCase, manter o camelCase e não mudar para snake_case, o mesmo vale para o contrario
-    - 
+  
+
+<span style="color:#e63946; font-weight:bold;">Título em vermelho</span>
+
+
