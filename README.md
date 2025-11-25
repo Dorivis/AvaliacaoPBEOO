@@ -1,17 +1,14 @@
-# AAvaliação sobre Django, APIs e Documentação!
+# Avaliação sobre Django!
 
-Gostaria de informá-lo que, no decorrer do dia de hoje, será realizada uma avaliação com foco central no universo conceitual e prático das tecnologias relacionadas ao Django, APIs e documentação. A avaliação abrangerá os aspectos mais relevantes que foram explorados ao longo do período letivo, considerando tanto os fundamentos teóricos quanto as práticas aplicacionais dessas tecnologias.
+Gostaria de informá-lo que, no decorrer do dia de hoje, será realizada uma avaliação com foco central no universo conceitual e prático das tecnologias relacionadas ao Django REST Framework (DRF), APIs e documentação. A avaliação abrangerá os aspectos mais relevantes explorados ao longo do período letivo, considerando tanto os fundamentos teóricos quanto as práticas aplicadas envolvendo o DRF.
 
-Esta avaliação foi planejada para proporcionar um espaço de reflexão crítica sobre os principais conceitos que sustentam o desenvolvimento de APIs com Django, com ênfase na criação, implementação e documentação de interfaces de programação. O objetivo é avaliar não apenas a capacidade de memorização dos conteúdos, mas, principalmente, a competência em aplicar esses conhecimentos de forma estruturada, eficaz e funcional dentro de cenários reais de desenvolvimento.
+Esta avaliação foi planejada para proporcionar um espaço de reflexão crítica sobre os principais conceitos que sustentam o desenvolvimento de APIs utilizando o Django REST Framework, com ênfase na criação, implementação e documentação de endpoints e serviços RESTful. O objetivo é avaliar não apenas a capacidade de memorização dos conteúdos, mas, principalmente, a competência em aplicar esses conhecimentos de forma estruturada, eficaz e funcional em cenários reais de desenvolvimento.
 
-Dessa forma, espera-se que vocês mobilizem seus conhecimentos prévios e os articulem com as práticas realizadas em aula, demonstrando a habilidade de desenvolver APIs de forma segura, eficiente e bem documentada. Além disso, será crucial a capacidade de entender e aplicar boas práticas de documentação de código e de endpoints, utilizando as ferramentas e recursos discutidos ao longo do curso para garantir que o sistema seja compreensível e fácil de usar, tanto para desenvolvedores quanto para usuários.
-
+Dessa forma, espera-se que vocês mobilizem seus conhecimentos prévios e os articulem com as práticas realizadas em aula, demonstrando a habilidade de desenvolver APIs com DRF de forma segura, eficiente e bem documentada. Além disso, será essencial a capacidade de compreender e aplicar boas práticas de documentação de código e de endpoints, utilizando as ferramentas e recursos discutidos ao longo do curso — como serializers, viewsets, routers e ferramentas de documentação automática — para garantir que o sistema seja claro, padronizado e fácil de usar, tanto para desenvolvedores quanto para usuários.
 
 ## 📌 Instruções da avaliação:
 
-Mas, respire fundo… porque **hoje não terá prova!**. Em vez da prova,vocês deverão realizar uma **pesquisa detalhada** sobre:
-
--   **Django Rest Framework (DRF)**
+Mas, respire fundo… porque **hoje não terá avaliação!**. Em vez da prova,vocês irão criar um projeto em django
 
 ## 📌 1. O que é Django Rest Framework (DRF)?
 
